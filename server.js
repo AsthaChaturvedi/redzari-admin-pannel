@@ -11,7 +11,7 @@ const stripeRoute = require("./routes/stripe");
 const app = express();
 connectToMongo();
 app.use(express.json());
-app.use(cors());
+app.use(cors({ origin: 'https://asthachaturvedi.github.io/'}));
 const PORT = 3001;
 
 //Routes
@@ -26,5 +26,5 @@ app.get("/", (req, res) => {
   res.send("Sup nigga?");
 });
 app.listen(PORT, () => {
-  console.log(`Backend Server is running on port ${PORT}`);
+  console.log(`Backend Server is running on port ${PORT} on url https://asthachaturvedi.github.io/`);
 });

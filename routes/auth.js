@@ -3,7 +3,6 @@ const { body, validationResult } = require("express-validator");
 const User = require("../Modals/User");
 const CryptoJS = require("crypto-js");
 const jwt = require("jsonwebtoken");
-const Authenticate = require("./middleware/authenticate");
 
 //Key for encrypting the password
 const key = "glitch";
