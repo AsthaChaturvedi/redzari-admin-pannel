@@ -73,7 +73,6 @@ router.post(
   async (req, res) => {
     //If there are errors then throw a bad request
     let success = false;
-    console.log(req , 7676)
     const errors = validationResult(req);
     if (!errors.isEmpty()) {
       return res.status(400).json({ success, errors: errors.array() });
