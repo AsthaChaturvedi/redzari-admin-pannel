@@ -3,7 +3,7 @@ const dotenv = require("dotenv");
 dotenv.config();
 const connectToMongo = () => {
   mongoose
-    .connect("mongodb://localhost:27017", {
+    .connect("mongodb+srv://Redzari:Redzari%401234@redzari.g71dqq3.mongodb.net/redzari", {
       useNewUrlParser: true,
       useUnifiedTopology: true,
     })
