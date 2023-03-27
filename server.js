@@ -1,7 +1,7 @@
 const express = require("express");
 var cors = require("cors");
 const connectToMongo = require("./config/db");
-var allowedDomains = ['https://asthachaturvedi.github.io/', 'http://localhost:3000'];
+var allowedDomains = ['https://asthachaturvedi.github.io/login', 'http://localhost:3000'];
 
 const userRoute = require("./routes/user");
 const authRoute = require("./routes/auth");
